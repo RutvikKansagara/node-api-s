@@ -73,3 +73,109 @@ These are used to authorize users to make the API call. Authentication tokens ch
 
 **2. API keys** 
 API keys verify the program or application making the API call. They identify the application and ensure it has the access rights required to make the particular API call. API keys are not as secure as tokens but they allow API monitoring in order to gather data on usage. You may have noticed a long string of characters and numbers in your browser URL when you visit different websites. This string is an API key the website uses to make internal API calls.
+
+
+# Documenting and testing APIs
+
+Postman provides several features beyond basic request configuration. Here's an extended guide that includes additional details, such as adding images to requests and exploring unique features:
+
+## Step 1: Install Postman
+If you haven't already installed Postman, download it from the Postman website.
+
+## Step 2: Open Postman
+Once installed, open the Postman application.
+
+## Step 3: Create a New Request
+- Create a New Request:
+- Click on the "New" button in the top-left corner.
+- Select "Request."
+- Enter Request Details:
+- Give your request a name.
+- Optionally, create or select a collection to organize your requests.
+
+## Step 4: Configure Request Settings
+- Select HTTP Method:
+- Choose the HTTP method (GET, POST, PUT, DELETE, etc.) for your request.
+- Enter Request URL:
+- In the URL bar, enter the endpoint URL you want to test.
+- Add Request Parameters:
+- In the "Params" tab, add query parameters for your request.
+- Add Request Headers:
+- In the "Headers" tab, add headers if required (e.g., Content-Type).
+- Add Request Body (if applicable):
+- In the "Body" tab, add request payload for methods like POST or PUT.
+- Add Image to the Request 
+- In the "Body" tab, select the "form-data" option.
+    Add a key-value pair where the key is a file parameter, and the value is an image file you want to upload.
+
+## Step 5: Send the Request
+Click the "Send" button to execute the request. You'll see the response below, including headers, status code, and response body.
+
+## Step 6: Inspect the Response
+- View Response Details:
+- Check the status code to ensure the request was successful (2xx) or to identify issues (4xx or    5xx).
+- Inspect the response headers and body for further details.
+- Format and Beautify:
+- Use the "Pretty" button to format the response body for better readability.
+
+## Step 7: Save and Organize Requests
+- Save Request:
+- Click the "Save" button to save your request.
+- Choose a collection or create a new one.
+- Organize in Collections:
+- Use collections to organize and group related requests.
+
+## Step 8: Use Variables and Environments (Optional)
+### Variables:
+
+- Use variables to store and reuse values across requests.
+
+### Environments:
+
+- Create environments to manage different sets of variables.
+
+## Step 9: Test Automation (Optional)
+### Write Tests:
+
+- In the "Tests" tab, write JavaScript tests to validate the response.
+### Run Collection Runner:
+
+- Use the Collection Runner to run multiple requests and tests in sequence.
+
+## Step 10: Share and Collaborate (Optional)
+### Share Requests:
+
+- Share individual requests or entire collections by clicking the "Share" button.
+
+### Collaborate in Workspaces:
+
+ - Use Postman Workspaces for collaboration with team members.
+
+## Step 11: Explore Advanced Features
+
+Postman includes many advanced features:
+
+### API Documentation:
+
+  - Generate documentation for your APIs.
+  
+### Mock Servers:
+
+-  Mock APIs to simulate responses for testing.
+
+### Monitors:
+
+-  Schedule and automate API requests.
+
+### Testing with Pre-request Scripts:
+
+- Use pre-request scripts to dynamically modify requests.
+
+### Dynamic Variables:
+
+- Explore dynamic variables like {{$guid}} or {{$timestamp}} for testing dynamic scenarios.
+
+### Assertions and Chaining:
+
+- Use assertions to verify the correctness of the response.
+- Learn about response chaining for extracting values from responses.
